@@ -1,5 +1,5 @@
 body{
-  background: grey;
+  background: white;
   font-family: 'Bellefair', serif;
   font-size: 17px;
 }
@@ -62,8 +62,9 @@ nav{
   margin-right: 20px;
 }
 
-.contact{
-  /*margin-right: 50px;*/
+.contacts{
+  margin-right: 50px;
+
 }
 
 /*.logo {
@@ -80,20 +81,20 @@ nav{
 }
 
 .dropdown-menu {
-  background-color: rgba(190, 190, 190, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dropdown-item {
  color: white;
 }
 
-img {
+.lyrika {
   width: 50px;
   height: 50px;
   margin-top: 15px;
 }
 
-.fa-home, .fa-users, .fa-sign-in-alt, .fa-registered, .fa-address-book, .fa-bomb, .fa-address-card {
+.fa-home, .fa-phone-volume, .fa-envelope, .fa-users, .fa-sign-in-alt, .fa-registered, .fa-address-book, .fa-bomb, .fa-address-card {
   color: red;
 }
 
@@ -104,6 +105,15 @@ img {
     bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-top: 2px solid lightgrey;
+}
+.footer_normal{
+  background-color: white;
+  width: 100%;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid lightgrey;
 }
 
 video {
@@ -114,15 +124,66 @@ video {
   z-index: -1;
 }
 
-.slash {
-
-    width: 50px;
-    display: inline-block;
-    height: 20px;
-    padding: ;
-}
-
 
 .contacts {
 display: inline-block;
+padding-bottom: 5px;
+margin-bottom: 5px;
+}
+.fa-facebook-square, .fa-twitter, .fa-instagram, .fa-youtube{
+  font-size: 30px;
+  padding: 0;
+}
+.fa-youtube{
+  color: #ff0000;
+}
+.fa-twitter{
+  color: #55acee;
+}
+.fa-instagram {
+  color: #c32aa3;
+}
+
+.icons {
+  display: inline-block;
+  padding-right: 15px;
+
+}
+.icons a{
+  display: inline-block;
+  margin-top: 8px;
+}
+
+
+/* *************************************section coach ***************/
+.coach{
+  background-color: white;
+  border: 1px dotted lightgrey;
+}
+.section__coach{
+  background-color: white;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+/* ************************************************workout section */
+
+
+.hover:hover{
+  background-color: lightgrey;
+}
+
+.table{
+  background-color: white;
+  color: black;
+}
+.hover a{
+  color: black;
+}
+th{
+  background-color: lightgrey;
+}
+.workout{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
