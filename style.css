@@ -1,9 +1,13 @@
 body{
-  background-image: url('images/download.jpg');
+  background-image: url("images/download.jpg");
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Bellefair', serif;
   font-size: 17px;
+}
+.background_container{
+  width: 900px;
+  margin: 0 auto;
 }
 
 .background_container{
@@ -102,7 +106,7 @@ nav{
   margin-top: 15px;
 }
 
-.fa-home, .fa-phone-volume, .fa-envelope, .fa-users, .fa-sign-in-alt, .fa-registered, .fa-address-book, .fa-bomb, .fa-address-card {
+.fa-home, .fa-phone-volume, .fa-info, .fa-envelope, .fa-users, .fa-sign-in-alt, .fa-registered, .fa-address-book, .fa-bomb, .fa-address-card {
   color: red;
 }
 
@@ -165,18 +169,27 @@ margin-bottom: 5px;
 
 /* *************************************section coach ***************/
 .coach{
-  background-color: white;
+  color: white;
+  /* background-color: white; */
   border: 1px dotted lightgrey;
+  border-radius: 20px;
+  margin-top: 5px;
 }
 .section__coach{
-  background-color: white;
+  /* background-color: white; */
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: 80px;
+}
+.hrtag{
+  background-color: white;
 }
 
 /* ************************************************workout section */
 
-
+.workout_img{
+  max-width: 100%;
+  border-radius: 50px
+}
 .hover:hover{
   background-color: lightgrey;
 }
@@ -192,11 +205,31 @@ th{
   background-color: lightgrey;
 }
 .workout{
-  margin-top: 15px;
+  margin-top: 60px;
   margin-bottom: 15px;
 }
+.workout_color{
+  color: white;
+}
+.zumba{
+  margin-left: 15px;
+}
 
-/****** about us ******/
+/****************************supplements************************************/
+
+.item{
+  margin-top: 50px;
+  color: black;
+  margin-left: 5px;
+
+}
+.supplements_border {
+  color: white;
+}
+.img-border{
+  border: 2px solid grey;
+  border-radius: 15px;
+}
 
 .aboutus {
   color: white;
@@ -227,4 +260,3 @@ em {
 .mapas {
   padding-bottom: 100px;
   margin-top: 15px;
-}
