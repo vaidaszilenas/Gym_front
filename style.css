@@ -1,10 +1,15 @@
 body{
-  background: white;
+  background-image: url('images/download.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   font-family: 'Bellefair', serif;
   font-size: 17px;
 }
 
-
+.background_container{
+  max-width: 650px;
+  margin: 0 auto;
+}
 
 /* header navigation */
 .navigat {
@@ -64,6 +69,9 @@ nav{
 
 .contacts{
   margin-right: 50px;
+  padding-left: 15px;
+  margin-top: 20px;
+
 
 }
 
@@ -186,4 +194,37 @@ th{
 .workout{
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+/****** about us ******/
+
+.aboutus {
+  color: white;
+  padding-top: 30px;
+  border-bottom: 2px solid #FF6200;
+
+}
+
+
+.contactus {
+  border: 1px;
+  padding: 5px;
+  border-bottom: solid 5px #dddddd;
+  width: 100%;
+  background: #dddddd;
+}
+
+.adresas {
+  color: grey;
+}
+
+em {
+  padding-left: 15px;
+  margin-top: 10px;
+  color: white;
+}
+
+.mapas {
+  padding-bottom: 100px;
+  margin-top: 15px;
 }
