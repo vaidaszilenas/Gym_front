@@ -10,10 +10,10 @@ body{
   margin: 0 auto;
 }
 
-.background_container{
+/* .background_container{
   max-width: 650px;
   margin: 0 auto;
-}
+} */
 
 /* header navigation */
 .navigat {
@@ -126,6 +126,7 @@ nav{
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 2px solid lightgrey;
+
 }
 
 video {
@@ -206,7 +207,7 @@ th{
 }
 .workout{
   margin-top: 60px;
-  margin-bottom: 15px;
+
 }
 .workout_color{
   color: white;
@@ -235,6 +236,7 @@ th{
   color: white;
   padding-top: 30px;
   border-bottom: 2px solid #FF6200;
+  margin-top: 30px;
 
 }
 
@@ -260,3 +262,4 @@ em {
 .mapas {
   padding-bottom: 100px;
   margin-top: 15px;
+  
