@@ -19,10 +19,10 @@
             <div class="mobile_lyrika pull-left">
               <a href="#"><img src="images/img.png" alt="" class="float-md-left lyrika"></a>
             </div>
-            <button class="navbar-toggler pull-right mobile_icon" type="button" data-toggle="collapse" data-target="#collapsingNavbar1">
+            <button class="navbar-toggler pull-right mobile_icon" id="btn" type="button" data-toggle="collapse" data-target="#collapsingNavbar1" onclick="myFunction()">
               <a>   ☰</a>
              </button>
-             <button class="navbar-toggler pull-right second_icon" type="button" data-toggle="collapse" data-target="#collapsingNavbar1">
+             <button class="navbar-toggler pull-right second_icon" id="btn" type="button" data-toggle="collapse" data-target="#collapsingNavbar1" onclick="myFunction()">
                <a>   ☰</a>
               </button>
             <ul class="nav">
@@ -39,12 +39,12 @@
                 <i class="fas fa-users"></i>
                 <a href="" class="h1a">Coaches</a>
               </li>
-              <div class="dropdown show margin">
-                <a class="btn navigat dropdown-toggle size" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+              <div class="dropdown show">
+                <a class="btn navigat dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                   <i class="fas fa-bomb"></i> Workouts
                 </a>
 
-                <div class="dropdown-menu text-center float-right" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu text-center margin" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="#">Crossfit</a>
                   <a class="dropdown-item" href="#">HIIT</a>
                   <a class="dropdown-item" href="#">Yoga</a>
@@ -74,15 +74,15 @@
       <section>
         <div class="background_container">
           <div class="row">
-                <div class="col-md-6 workout workout_color">
+                <div class="col-md-6 col- workout workout_color">
                   <h2 class="zumba">Zumba</h2>
                   <p>Grooving to the beats of salsa, flamenco, and merengue music feels more like a dance party than a workout, which is exactly what makes Zumba so popular. The Latin-inspired dance workout is one of the most popular group exercise classes in the world.</p>
-                  <p>The high-energy classes are set to upbeat music and feature choreographed dance numbers that you might see in a nightclub. You don’t need to be a great dancer to feel welcome in a Zumba class. With the tag line, “Ditch the Workout, Join the Party,” the classes emphasize moving to the music and having a good time, no rhythm required.  With the tag line, “Ditch the Workout, Join the Party,” the classes emphasize moving to the music and having a good time, no rhythm required.</p>
+                  <p>The high-energy classes are set to upbeat music and feature choreographed dance numbers that you might see in a nightclub. You don’t need to be a great dancer to feel welcome in a Zumba class. With the tag line, “Ditch the Workout, Join the Party,” the classes emphasize moving to the music and having a good time, no rhythm required.  With the tag line, “Ditch the Workout, Join the Party,” the classes emphasize moving to the music and having a good time, no rhythm required.You don’t need to be a great dancer to feel welcome in a Zumba class. With the tag line, “Ditch the Workout, Join the Party,” the classes emphasize moving to the music and having a good time, no rhythm required.  With the tag line, “Ditch the Workout, Join the Party,” the classes emphasize moving to the music and having a good time, no rhythm required.</p>
                 </div>
-                <div class="col-md-6 workout">
-                  <img class="float-right workout_img" src="images/zumba.jpeg" alt="">
+                <div class="col-md-6 col- workout">
+                  <img class="float-right workout_img" id="img_important" src="images/zumba.jpeg" alt="">
                 </div>
-                <div class="col-md-12 workout_color">
+                <div class="col-md-12 col- workout_color">
                   <p>There are several different kinds of Zumba classes, from Aqua Zumba workouts to classes like Zumba Toning that incorporate weights for additional calorie burning and strength training. There are even Zumba classes for kids.
                   Working up a sweat in the 60-minute classes burns an average of 369 calories -- more than cardio kickboxing or step aerobics. You’ll get a great cardio workout that melts fat, strengthens your core, and improves flexibility.There are several different kinds of Zumba classes, from Aqua Zumba workouts to classes like Zumba Toning that incorporate weights for additional calorie burning and strength training. There are even Zumba classes for kids.
                   Working up a sweat in the 60-minute classes burns an average of 369 calories -- more than cardio kickboxing or step aerobics. You’ll get a great cardio workout that melts fat, strengthens your core, and improves flexibility.</p>
@@ -94,7 +94,7 @@
       <section>
         <div class="background_container">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 col- col-sm">
               <table class="table table-dark table-bordered">
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -226,7 +226,7 @@
     <section class="footer_normal">
       <div class="container">
         <div class="row">
-          <div class="col-md  text-center">
+          <div class="col-md col- col-sm  text-center">
             <div class="contacts">
               <i class="far fa-address-card"></i><span> Pranciškonų g. 10, Kaunas</span>
             </div>
@@ -261,23 +261,23 @@
     <script type="text/javascript">
 
 
-
+	
+	
+	
+	
         $(document).ready(function(){
-
-              $( ".second_icon" ).hide();
-              $( ".navigat" ).hide();
               $( ".mobile_icon" ).click(function() {
-              $( ".navigat" ).toggle( "slow", function() {
-                $( ".mobile_icon" ).hide();
-                $( ".second_icon" ).show();
-              });
+				  $( ".navigat" ).toggle( "slow", function() {
+					$( ".mobile_icon" ).hide();
+					$( ".second_icon" ).show();
+				});
               });
 
               $( ".second_icon" ).click(function() {
                 $( ".navigat" ).toggle( "slow", function() {
-                $( ".second_icon" ).hide();
-                $( ".mobile_icon" ).show();
-              });
+					$( ".second_icon" ).hide();
+					$( ".mobile_icon" ).show();
+				});
               });
 
               });
