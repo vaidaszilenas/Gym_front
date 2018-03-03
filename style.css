@@ -71,6 +71,26 @@ body{
   70% { border-color: grey; }
   100% { border-color: green; }*/
 }
+.dropdown_navigat{
+  display: inline-block;
+  border: solid 2px black;
+  padding-top: 2px;
+
+  color: white;
+}
+.dropdown_navigat:hover{
+  border: solid 2px red;
+  z-index: 100;
+  border-radius: 10px;
+  transform: scale(1.2);
+  transition: all 1s;
+  color: white;
+
+   -webkit-animation-name: borderColors;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+
+}
 .navigat:active{
   background-color: white;
   color: red;
@@ -286,8 +306,11 @@ em {
 .mapas {
   padding-bottom: 100px;
   margin-top: 15px;
-}
 
+}
+.footer_icons{
+  display: inline-block;
+}
 
 /****************************************RESPONSIVE*****************************************************/
 /****************************************RESPONSIVE*****************************************************/
@@ -310,6 +333,10 @@ em {
     display: none;
     color: white;
   }
+  .dropdown_navigat{
+    display: none;
+
+  }
   .nav{
     display: flex;
     flex-direction: column;
@@ -317,7 +344,7 @@ em {
 
   }
   .dropdown-menu{
-   
+
     transform: translate3d(-65px, -20px, 0px);
     right: 0;
     top: 0;
@@ -337,7 +364,7 @@ em {
   .mobile_lyrika{
     display: inline-block;
   }
-	
+
 	.workout_img{
 		display: none;
 	}
@@ -350,7 +377,12 @@ em {
 	.workout{
 		margin-bottom: 0;
 	}
-	
+  .footer_icons{
+    display: block;
+  }
+  .contacts{
+    display: block;
+  }
 }
 
 
@@ -379,9 +411,9 @@ em {
     margin-top: 28px;
     padding: 4px;
     margin-left: 20px;
-  } 
+  }
   .dropdown-menu{
-    
+
     transform: translate3d(-65px, -20px, 0px);
     right: 0;
     top: 0;
@@ -405,6 +437,16 @@ em {
   .contacts {
 	display: block;
   }
+  .footer_icons{
+    display: block;
+  }
+  .coach1, .coach2, .coach3, .coach4 {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+  }
+
+
 }
 
 
@@ -435,7 +477,7 @@ body{
   margin-left: 20px;
 }
 .dropdown-menu{
-    
+
     transform: translate3d(-65px, -20px, 0px);
     right: 0;
     top: 0;
@@ -451,6 +493,9 @@ body{
   }
    .contacts {
 	display: block;
+  }
+  .map_insert{
+    margin: 0 auto;
   }
 }
 
@@ -471,7 +516,7 @@ body{
     color: white;
   }
  .dropdown-menu{
- 
+
     transform: translate3d(-65px, -20px, 0px);
     right: 0;
     top: 0;
@@ -481,6 +526,10 @@ body{
     display: flex;
     flex-direction: column;
     /* width: 40px; */
+  }
+  .map_insert{
+    margin: 0 auto;
+
   }
 }
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -496,7 +545,7 @@ body{
    background-color: black;
  }
   .dropdown-menu{
-   
+
     transform: translate3d(-65px, -20px, 0px);
     right: 0;
     top: 0;
@@ -512,12 +561,20 @@ body{
     flex-direction: column;
     /* width: 40px; */
   }
+  .map_insert{
+    margin: 0 auto;
+
+  }
  }
 
 @media (min-width: 1500px) and (max-width: 1919px) {
   .background_container{
     width: 900px;
     margin: 0 auto;
+  }
+  .map_insert{
+    margin: 0 auto;
+
   }
 
  }
@@ -532,5 +589,9 @@ body{
   }
   .workout_img{
 	margin-right: 100px;
+  }
+  .map_insert{
+    margin: 0 auto;
+
   }
 }

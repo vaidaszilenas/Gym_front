@@ -39,12 +39,12 @@
                 <i class="fas fa-users"></i>
                 <a href="" class="h1a">Coaches</a>
               </li>
-              <div class="dropdown show">
-                <a class="btn navigat dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+              <div class="dropdown show dropdown_navigat">
+                <a class="btn h1a dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                   <i class="fas fa-bomb"></i> Workouts
                 </a>
 
-                <div class="dropdown-menu text-center margin" aria-labelledby="dropdownMenuLink">
+                <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="#">Crossfit</a>
                   <a class="dropdown-item" href="#">HIIT</a>
                   <a class="dropdown-item" href="#">Yoga</a>
@@ -236,17 +236,19 @@
             <div class="contacts">
               <i class="far fa-envelope"></i><span> lyrika_gym@gmail.com</span>
             </div>
-            <div class="icons">
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-            </div>
-            <div class="icons">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="icons">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="icons">
-              <a href="#"><i class="fab fa-youtube"></i></a>
+            <div class="footer_icons">
+              <div class="icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </div>
+              <div class="icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+              <div class="icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="icons">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
             </div>
 
           </div>
@@ -261,20 +263,20 @@
     <script type="text/javascript">
 
 
-	
-	
-	
-	
+
+
+
+
         $(document).ready(function(){
               $( ".mobile_icon" ).click(function() {
-				  $( ".navigat" ).toggle( "slow", function() {
+				  $( ".navigat, .dropdown_navigat" ).toggle( "slow", function() {
 					$( ".mobile_icon" ).hide();
 					$( ".second_icon" ).show();
 				});
               });
 
               $( ".second_icon" ).click(function() {
-                $( ".navigat" ).toggle( "slow", function() {
+                $( ".navigat, .dropdown_navigat" ).toggle( "slow", function() {
 					$( ".second_icon" ).hide();
 					$( ".mobile_icon" ).show();
 				});
